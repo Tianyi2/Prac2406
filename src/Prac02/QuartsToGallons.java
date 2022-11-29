@@ -8,8 +8,9 @@ class QuartsToGallons
       int numberQuartsNeeded = 18;
       int gallonsNeeded;
       int quartsNeeded;
-      gallonsNeeded = numberQuartsNeeded / QUARTS_IN_A_GALLON;
-      quartsNeeded = numberQuartsNeeded % QUARTS_IN_A_GALLON;
+      gallonsNeeded = numberQuartsNeeded / QUARTS_IN_A_GALLON; // Calculate the gallons by dividing the number of quarts in a gallon
+      quartsNeeded = numberQuartsNeeded % QUARTS_IN_A_GALLON; // Calculate the quarts needed
+
       System.out.printf("A job that needs %d quarts requires %d gallons plus %d quarts", numberQuartsNeeded, gallonsNeeded, quartsNeeded);
    }
 }

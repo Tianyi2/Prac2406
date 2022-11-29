@@ -12,18 +12,20 @@ class Dollars
 
      Scanner scanner = new Scanner(System.in);
      System.out.print("Number of dollars: ");
-     dollar = scanner.nextInt();
+     dollar = scanner.nextInt();  // Get the dollars
 
-     twenties = dollar / TWENTY;
+     twenties = dollar / TWENTY; // Calculate the number of twenties by divide TWENTY (20) from the dollar
      leftDollar = dollar - (twenties * TWENTY);
 
-     tens = leftDollar / TEN;
+     tens = leftDollar / TEN; // Calculate the number of tens by divide TEN (10) from the dollar
      leftDollar = leftDollar - (tens * TEN);
 
-     fives = leftDollar / FIVE;
+     fives = leftDollar / FIVE; // Calculate the number of fives by divide FIVE (5) from the dollar
      leftDollar = leftDollar - (fives * FIVE);
 
-     ones = leftDollar;
+     ones = leftDollar; // Assign the leftDollar to ones, which is the number of ones
+
+     // Display who many twenties, tens, fives, and ones in the dollars the user input
      System.out.printf("$%d can be converted to %d 20s + %d 10s + %d 5s + %d 1s", dollar, twenties, tens, fives, ones);
    }
 }
