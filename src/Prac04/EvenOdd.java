@@ -19,3 +19,4 @@ class EvenOdd
       return number % 2 == 0;
    }      
 }
+
