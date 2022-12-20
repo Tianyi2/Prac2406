@@ -2,14 +2,14 @@ package Prac06;
 
 public class DebugVacation
 {
-    private final int days;
+    int days;
     public DebugVacation()
     {
-        days = 10;
+        this.days = 10;
     }
     public int getDays()
     {
-        return days;
+        return this.days;
     }
 
     public static void main(String[] args){
