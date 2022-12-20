@@ -7,9 +7,9 @@ public class DebugCustomer
     protected double creditLimit;
     public DebugCustomer(int id, String name, double credit)
     {
-       idNumber = id;
+       this.idNumber = id;
        this.name = name;
-       creditLimit = credit;
+       this.creditLimit = credit;
     }
     public void display()
     {

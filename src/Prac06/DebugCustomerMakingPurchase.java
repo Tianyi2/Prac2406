@@ -2,9 +2,9 @@ package Prac06;
 
 public class DebugCustomerMakingPurchase extends DebugCustomer
 {
-    private final double amountOfPurchase;
-    private final boolean overLimit;
-    private DebugCustomerMakingPurchase(int id, String name, double credit, double purchAmount)
+    double amountOfPurchase;
+    boolean overLimit;
+    public DebugCustomerMakingPurchase(int id, String name, double credit, double purchAmount)
     {
         super(id, name, credit);
         this.amountOfPurchase = purchAmount;
